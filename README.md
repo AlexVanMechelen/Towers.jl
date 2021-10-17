@@ -2,7 +2,8 @@
 
 [![GitHub top language](https://img.shields.io/github/languages/top/AlexVanMechelen/Towers.jl)](https://github.com/AlexVanMechelen/Towers.jl) [![GitHub repo size](https://img.shields.io/github/repo-size/AlexVanMechelen/Towers.jl?label=repo%20size)](https://github.com/AlexVanMechelen/Towers.jl) [![GitHub license](https://img.shields.io/github/license/AlexVanMechelen/Towers.jl "MIT License")](https://github.com/AlexVanMechelen/Towers.jl/blob/master/LICENSE)
 
-A Julia project originally made in Julia 1.2.0 featuring the game of Towers, similar to the one of `chiark` you can find [here](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/towers.html "Online Towers game"). \
+A Julia project originally made in Julia 1.2.0 featuring the game of Towers.\
+Similar to the one of chiark you can find [here](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/towers.html "Online Towers game"). \
 Succesfully tested in Julia 1.5.3.
 
 This project features:
@@ -16,7 +17,7 @@ This project features:
 
 1. Install Julia from [this site](https://julialang.org/downloads/).
 2. Dowload a copy of this project.
-3. Run the script `Towers.jl` in the Julia REPL. This file is located in the `Towers Game` folder.
+3. Run the script `Towers.jl` in the Julia REPL by using the *include* function. This file is located in the `Towers Game` folder.
  ```Julia
  include("path\\to\\Towers Game\\Towers.jl") # on Windows
  include("path/to/Towers Game/Towers.jl") # on Mac
@@ -27,7 +28,7 @@ This project features:
 
 Press a character like `u` or `d`, followed by `Enter`, to move `Up` or `Down`.
 
-When the `Start` button is selected in the menu, some instruction text will appear in the bottom left corner. This will give you more information on what commands exist.
+When the `Start` button is highlighted in the menu, some summarising instruction text will appear in the bottom left corner. This will give you more information on what commands exist.
 
 All input keys can be configured in the first few lines of the `Towers.jl` file. \
 Search for this piece of code and change the characters in the Tuples:
@@ -42,12 +43,13 @@ global const KEY_TOGGLE_ERRORS = ('o',)
 ```
 Entering more than one character in a Tuple will bind multiple keys to the same functionality.
 > Example: By default, you can move `Up` by pressing `u` OR `e`, followed by an `Enter` press.
+
 > Remember: Every input has to be followed by an `Enter` press. When just pressing `Enter` without a preceding key, this will function as `select`.
 
 ## Import & export
 
 Every game is uniquely defined by a Boardstring. When playing a game, this is being displayed at the top left of the REPL.
-> Example of a 8x8 game's Boardstring:
+> Example of an 8x8 game's Boardstring:
 ```
 8:5/4/3/2/3/2/2/1/1/2/3/2/3/2/4/4/4/3/3/4/4/2/2/1/1/2/2/3/2/3/3/5,d5a2d1h2a3c4f2b8b5a4_8b2b5d4h5a
 ```
@@ -64,7 +66,7 @@ From this mode, you can:
 1. Type 'solve' to solve the current game, instantly.
 2. Type 'solvestep' to solve the current game, step by step, whilst displaying explanation about each step taken.\
 Hit `Enter` to go to the next step.
-4. Run any julia command and thus also access the functions of `Towers.jl` and `Solver.jl`.
+4. Run any Julia command and thus also access the functions of `Towers.jl` and `Solver.jl`.
 5. Type 'exit' to exit the game.
 
 
