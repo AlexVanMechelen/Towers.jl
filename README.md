@@ -87,4 +87,5 @@ global const COL_GUESS = :light_magenta
 
 ## Documentation
 
-A right amount of comments are added to the code to enhance readability. Furthermore, you can find some flowcharts in the `Towers FlowCharts` folder, providing a visual representation of what goes on under the hood. Finaly, you can have a look at the `Towers Solver.pdf` file in that same folder, enlisting all of the basic rules used by `Solver.jl`, along with examples.
+The `Towers FlowCharts` folder  provides a visual representation of the code.
+The `Towers Solver.pdf` file in that same folder contains all of the basic rules used by `Solver.jl`, along with examples.
